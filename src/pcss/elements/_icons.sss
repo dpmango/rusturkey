@@ -1,0 +1,94 @@
+// ICONS
+.ico
+  display: inline-block
+  font-style: normal
+  content: ' '
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  vertical-align: middle
+
+
+// mixin
+@define-mixin myIcon $name
+  background: url('../images/$(name).svg') no-repeat center
+  width: 1em
+  height: 1em
+
+.ico-logo
+  background-image: url('../images/logo@2x.png')
+  width: 226px
+  height: 46px
+
+.ico-login
+  background-color: white
+  background-image: url('../images/ico-login@2x.png')
+  background-size: 24px 23px
+  size: 43px
+  border-radius: 50%
+
+.ico-hamb
+  background-color: white
+  background-image: url('../images/ico-hamb@2x.png')
+  background-size: 21px 15px
+  size: 43px
+  border-radius: 50%
+
+
+
+.ico-growth-up
+  background-image: url('../../images/svg/ico-growth-up.svg')
+  width: 10px
+  height: 8px
+.ico-growth-down
+  background-image: url('../../images/svg/ico-growth-down.svg')
+  width: 10px
+  height: 8px
+
+.ico-weather-rain
+  background-image: url('../images/weatherRain@2x.png')
+  size: 39px
+
+
+.ico-cat-news
+  background-image: url('../images/ico-cat-news@1x.png')
+  size: 26px
+
+.ico-cat-hot
+  background-image: url('../images/ico-cat-hot@1x.png')
+  size: 25px 32px
+
+.ico-cat-turkey
+  background-image: url('../images/ico-cat-turkey@1x.png')
+  size: 38px 31px
+
+.ico-alert
+  background-image: url('../images/ico-alert@2x.png')
+  size: 12px 14px
+
+
+// social icons
+
+.ico-gplus
+  background-image: svg-load('../../images/svg/ico-gplus.svg', fill=#FFF)
+  size: 15px
+
+.ico-twitter
+  background-image: svg-load('../../images/svg/ico-tw.svg', fill=#FFF)
+  size: 15px
+
+.ico-vk
+  background-image: svg-load('../../images/svg/ico-vk.svg', fill=#FFF)
+  size: 15px
+
+.ico-fb
+  background-image: svg-load('../../images/svg/ico-fb.svg', fill=#FFF)
+  size: 15px
+
+.ico-rss
+  background-image: svg-load('../../images/svg/ico-rss.svg', fill=#FFF)
+  size: 15px
+
+.ico-ok
+  background-image: svg-load('../../images/svg/ico-ok.svg', fill=#FFF)
+  size: 15px

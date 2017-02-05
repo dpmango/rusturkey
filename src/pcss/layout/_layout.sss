@@ -1,0 +1,61 @@
+// LAYOUT
+
+$mobile: width <= 568px
+$mobile-from: width >= 568px
+$tablet: width <= 768px
+$tablet-from: width <= 768px
+$desktop: width <= 1000px
+$desktop-from: width >= 1000px
+$wide: width <= 1200px
+$wide-from: width >= 1200px
+$hd: width <= 1680px
+$hd-from: width >= 1680px
+
+// variables
+$fontColor: #333
+$colorGreen: #4ab68f
+$colorRed: #aa2525
+$colorYellow: #fda737
+$colorOrange: #f46d36
+$darkColor: #101226
+
+*
+  box-sizing: border-box
+
+a
+  color: inherit
+  &:hover, &:focus, &:visited
+    text-decoration: none
+    color: inherit
+
+ul
+  list-style: none
+  li
+    display: inline-block
+
+
+body, html
+  background: #f5f5f5
+  color: $fontColor
+  font-family: 'ProximaNova'
+  font-size: 14px
+  max-width: 100%
+  overflow-x: hidden
+
+.container
+  width: 100%
+  max-width: 1200px
+
+.no-pad-r
+  padding-right: 0
+  margin-right: -30px
+  @media($desktop)
+    margin-right: 0
+    padding-right: 15px
+
+.no-pad-l
+  padding-left: 0
+  margin-left: 30px
+  @media($desktop)
+    margin-left: 0
+    padding-left: 15px
