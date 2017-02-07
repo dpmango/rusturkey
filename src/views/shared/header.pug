@@ -1,5 +1,5 @@
-// BANNER::START
-section.topBanner
+// BANNER DESKTOP::START
+section.topBanner.hidden-xs-down
   .container
     .row
       .col-sm-12.text-xs-center
@@ -11,15 +11,150 @@ section.topBanner
 header.header
   .container
     .row
-      .col-xs-12.text-xs-center
+      .col-xs-12.text-sm-center
         a(href="#")
           i.ico.ico-logo
-        .header__searchbar
+        .header__searchbar.hidden-xs-down
           input.form-control(type="text")
         a(href='#').header__login
           i.ico.ico-login
           span Войти <br> на сайт
-        .header__navi.hidden-lg-up
+        .header__navi.hidden-lg-up.hidden-xs-down
           i.ico.ico-hamb
           span Наши <br> рубрики
           .header__navi__drop
+            .content__menu
+              ul
+                li
+                  a(href="#") Главное
+                li
+                  a(href="#") Россия
+                li
+                  a(href="#") Мир
+                li
+                  a(href="#") Бывший СССР
+                li.have-ul
+                  a(href="#") Финансы
+                  ul
+                    li
+                      a(href="#") Бизнес
+                    li
+                      a(href="#") Силовые структуры
+                    li
+                      a(href="#") Наука и техника
+                    li
+                      a(href="#") Культура
+                    li
+                      a(href="#") Спорт
+                    li
+                      a(href="#") Интернет и СМИ
+                    li
+                      a(href="#") Ценности
+                    li
+                      a(href="#") Путешествия
+
+                li
+                  a(href="#") Бизнес
+                li
+                  a(href="#") Силовые структуры
+                li
+                  a(href="#") Наука и техника
+                li
+                  a(href="#") Культура
+                li
+                  a(href="#") Спорт
+                li
+                  a(href="#") Интернет и СМИ
+                li
+                  a(href="#") Путешествия
+                li
+                  a(href="#") Путешествия
+                li
+                  a(href="#") Из жизни
+                li.active
+                  a(href="#") Хорошие новости
+                li
+                  a(href="#") Мотор
+                li
+                  a(href="#") Дом
+                li
+                  a(href="#") Статьи
+                li
+                  a(href="#") Галереи
+                li
+                  a(href="#") Спецпроекты
+
+        .header__subMobile.hidden-sm-up
+          .header__searchbar
+            input.form-control(type="text")
+          .header__navi
+            span Наши рубрики
+            i.ico.ico-hamb
+            .header__navi__drop
+              .content__menu
+                ul
+                  li
+                    a(href="#") Главное
+                  li
+                    a(href="#") Россия
+                  li
+                    a(href="#") Мир
+                  li
+                    a(href="#") Бывший СССР
+                  li.have-ul
+                    a(href="#") Финансы
+                    ul
+                      li
+                        a(href="#") Бизнес
+                      li
+                        a(href="#") Силовые структуры
+                      li
+                        a(href="#") Наука и техника
+                      li
+                        a(href="#") Культура
+                      li
+                        a(href="#") Спорт
+                      li
+                        a(href="#") Интернет и СМИ
+                      li
+                        a(href="#") Ценности
+                      li
+                        a(href="#") Путешествия
+
+                  li
+                    a(href="#") Бизнес
+                  li
+                    a(href="#") Силовые структуры
+                  li
+                    a(href="#") Наука и техника
+                  li
+                    a(href="#") Культура
+                  li
+                    a(href="#") Спорт
+                  li
+                    a(href="#") Интернет и СМИ
+                  li
+                    a(href="#") Путешествия
+                  li
+                    a(href="#") Путешествия
+                  li
+                    a(href="#") Из жизни
+                  li.active
+                    a(href="#") Хорошие новости
+                  li
+                    a(href="#") Мотор
+                  li
+                    a(href="#") Дом
+                  li
+                    a(href="#") Статьи
+                  li
+                    a(href="#") Галереи
+                  li
+                    a(href="#") Спецпроекты
+
+// BANNER MOBILE::START
+section.topBanner.hidden-sm-up
+  .container
+    .row
+      .col-sm-12.text-xs-center
+        img(src="images/topBanner@2x.png")

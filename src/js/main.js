@@ -14,28 +14,21 @@ $(document).ready(function(){
 	});
 
   // Toggle menu
-  $('.content__menu li.have-ul').on('click', function(){
-    $(this).toggleClass('active');
-    $(this).find('ul').fadeToggle();
+  $('.content__menu ul > li.have-ul > a').on('click', function(){
+    $(this).parent().toggleClass('active');
+    $(this).parent().find('ul').fadeToggle();
   });
 
-  // owl
-  // $('#-owlTop').owlCarousel({
-  //   loop: true,
-  //   nav: true,
-  //   margin: 0,
-  //   responsive: {
-  //     0:{
-  //       items: 1,
-  //     },
-  //     600:{
-  //       items: 1,
-  //     },
-  //     1000:{
-  //       items: 10,
-  //     }
-  //   }
-  // });
+  $('.ico-hamb').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).parent().find('.header__navi__drop').fadeToggle();
+  });
+
+  // fake sorting
+  $('.sorting .btn').on('click', function(){
+    $(this).toggleClass('active');
+  });
+
 
   $('#owlTop').slick({
     dots: false,
@@ -45,51 +38,13 @@ $(document).ready(function(){
     centerMode: false,
     variableWidth: true
   });
-
-  // Magnific Popup
-  $('.popup-with-zoom-anim').magnificPopup({
-    type: 'inline',
-    fixedContentPos: false,
-    fixedBgPos: true,
-    overflowY: 'auto',
-    closeBtnInside: true,
-    preloader: false,
-    midClick: true,
-    removalDelay: 300,
-    mainClass: 'my-mfp-zoom-in'
+  $('#owlTopMobile').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: false,
+    variableWidth: true
   });
-
-  $('.popup-with-move-anim').magnificPopup({
-    type: 'inline',
-    fixedContentPos: false,
-    fixedBgPos: true,
-    overflowY: 'auto',
-    closeBtnInside: true,
-    preloader: false,
-    midClick: true,
-    removalDelay: 300,
-    mainClass: 'my-mfp-slide-bottom'
-  });
-
-  $('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1]
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-		}
-	});
-
-  // Masked input
-  $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
-  $("input[name='phone']").mask("9 (999) 999-9999");
-  $("#tin").mask("99-9999999");
-  $("#ssn").mask("999-99-9999");
 
 });

@@ -19,6 +19,11 @@
   background-image: url('../images/logo@2x.png')
   width: 226px
   height: 46px
+  @media(width <= 390px)
+    width: 200px
+  @media(width <= 360px)
+    width: 160px
+
 
 .ico-login
   background-color: white
@@ -26,6 +31,9 @@
   background-size: 24px 23px
   size: 43px
   border-radius: 50%
+  transition: all .3s ease
+  &:hover
+    background-color: #f3f3f3
 
 .ico-hamb
   background-color: white
@@ -33,6 +41,34 @@
   background-size: 21px 15px
   size: 43px
   border-radius: 50%
+  transition: all .3s ease
+  position: relative
+  @media($mobile)
+    border-radius: 0
+  &:after
+    opacity: 0
+    content: ' '
+    position: absolute
+    bottom: 0px
+    left: 0
+    width: 100%
+    background-color: #f3f3f3
+    height: 15px
+    transition: all .3s ease
+  &:hover
+    background-color: #f3f3f3
+  &.active
+    background-color: #f3f3f3
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
+    @media($mobile)
+      background-color: white
+    &:after
+      opacity: 1
+      display: block
+      bottom: -15px
+      @media($mobile)
+        display: none
 
 
 
@@ -92,3 +128,17 @@
 .ico-ok
   background-image: svg-load('../../images/svg/ico-ok.svg', fill=#FFF)
   size: 15px
+
+.ico-paginate-next
+  background-image: svg-load('../../images/svg/ico-paginate-next.svg', fill=#FFF)
+  size: 11px
+
+.ico-paginate-prev
+  background-image: svg-load('../../images/svg/ico-paginate-next.svg', fill=#FFF)
+  size: 11px
+  transform: rotate(180deg)
+
+.ico-sorting
+  background-image: url('../images/have-ul-dark@2x.png')
+  width: 9px
+  height: 5px
