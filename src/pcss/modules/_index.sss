@@ -22,6 +22,14 @@
             background-size: 9px 5px
             > a
               color: white
+        .have-ul-second
+          > a
+            background: #cbcbcb url('../images/have-ul-dark@2x.png') no-repeat 10px 15px
+            background-size: 9px 5px
+          ul
+            text-align: left
+            background: #e0e0e0
+
           &:hover:not(.active)
             background-color: color(#565656 a(35%))
 
@@ -51,7 +59,10 @@
     margin-bottom: 10px
     margin-left: -15px
     margin-right: -15px
+    @media($desktop)
+      margin-left: 0px
     @media($tablet)
+      margin-left: -15px
       padding-left: 15px
       padding-right: 15px
     @media($mobile)
@@ -66,7 +77,10 @@
 
     &--wide
       margin-bottom: 20px
+      img
+        margin-bottom: 10px
       .content__card__title
+        margin-left: 15px
         margin-top: 10px
         font-size: 36px
         line-height: 30px
@@ -75,8 +89,11 @@
           font-size: 24px
           line-height: 22px
       .content__card__intro
+        margin-left: 15px
         font-size: 16px
         margin-top: 10px
+      .content__card__info
+        margin-left: 15px
 
     &__image
       display: inline-block
@@ -151,11 +168,21 @@
 
     &--inner
       border-top: 15px solid #e7e7e7
+      background: white
       .content__card__title
         font-size: 40px
         line-height: 1
+        margin-left: 5px
       .content__card__share
         margin-bottom: 20px
+        margin-left: 5px
+      .content__card__crumbs
+        margin-left: 5px
+      .content__card__info
+        margin-left: 5px
+      .content__card__intro
+        margin-left: 5px
+
 
     &__crumbs
       margin-top: 15px
@@ -167,6 +194,8 @@
         padding-left: 3px
         padding-right: 3px
         text-decoration: underline
+        &:first-child
+          padding-left: 0
       span
         text-decoration: none
         display: inline-block
@@ -408,6 +437,10 @@
   padding-top: 35px
   padding-bottom: 10px
   margin-top: 10px
+  @media($desktop)
+    padding-top: 10px
+  @media($mobile)
+    background: #f5f5f5
   &__name
     font-family: 'ProximaNova-Bold'
     font-size: 24px
@@ -423,8 +456,16 @@
     margin-bottom: 15px
     margin-left: 0
     padding-left: 0
+    overflow: hidden
+    text-overflow: ellipsis
     li
       position: relative
+      a
+        white-space: nowrap
+      @media($desktop)
+        display: none
+        &:nth-child(1), &:nth-child(2)
+          display: inline-block
       &::before
         display: inline-block
         content: ' '
@@ -484,6 +525,9 @@
       font-size: 24px
   &__card
     opacity: 1
+    @media($desktop)
+      img
+        width: 95%
     @media($mobile)
       padding-left: 20px
       padding-right: 20px
@@ -497,7 +541,7 @@
     &__title
       font-family: 'ProximaNova-Bold'
       font-size: 18px
-      padding-top: 15px
+      padding-top: 20px
       padding-left: 20px
       display: inline-block
       @media($mobile)
@@ -509,6 +553,10 @@
 /////////////
 // INNER PAGES
 ////////////
+.profilePage
+  .innerWrapper
+    border-top: none !important
+
 .innerWrapper
   background: white
   border-top: 15px solid #e7e7e7
@@ -714,3 +762,14 @@
   -webkit-appearance: none
   &:focus
     outline: none
+
+@media(width <= 810px)
+  .profileControl
+    a
+      display: block
+      margin-bottom: 10px
+
+@media(width <= 645px)
+  .profileControl
+    .ui-select
+      margin-left: 0
