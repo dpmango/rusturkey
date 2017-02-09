@@ -30,3 +30,6 @@ __Production__
 - Magnific Popup 1.1.0
 - Masked input
 - CSS Hamburgers
+
+
+gulp build && git add . && git commit -m "fixed" && git push origin master && git subtree push --prefix dist origin gh-pages
