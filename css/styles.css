@@ -2804,7 +2804,7 @@ body, html {
 }
 @media(max-width: 576px) {
     .no-pad-r {
-        padding-right: 0px;
+        padding-right: 15px;
         width: 100%;
     }
 }
@@ -2835,6 +2835,11 @@ body, html {
 }
 .separatorCards .content__card:nth-child(even) {
     background: white;
+}
+@media(max-width: 576px) {
+    .separatorCards .innerWrapper h1 {
+        padding-left: 0;
+    }
 }
 
 /* 2. Elements */
@@ -3547,12 +3552,6 @@ body, html {
 .content__card--wide .content__card__info {
     margin-left: 15px;
 }
-@media(max-width: 576px) {
-    .content__card--wide .content__card__copy {
-        font-size: 24px;
-        line-height: 22px;
-    }
-}
 .content__card__image {
     display: inline-block;
     float: left;
@@ -4117,6 +4116,7 @@ body, html {
     .bottomCards {
         padding-top: 15px;
         padding-bottom: 15px;
+        background: #f5f5f5;
     }
 }
 .bottomCards--whiteBg {
@@ -4197,6 +4197,16 @@ body, html {
     margin-bottom: 20px;
     padding-right: 25px;
     padding-left: 25px;
+}
+@media(max-width: 1000px) {
+    .innerWrapper {
+        margin-right: -15px;
+    }
+}
+@media(max-width: 576px) {
+    .innerWrapper {
+        margin-right: 0;
+    }
 }
 @media(max-width: 576px) {
     .innerWrapper .content__card {
