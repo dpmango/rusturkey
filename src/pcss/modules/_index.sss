@@ -93,9 +93,6 @@
         text-align: right
         margin-top: -7px
         margin-bottom: 10px
-        @media($mobile)
-          font-size: 24px
-          line-height: 22px
       .content__card__intro
         margin-left: 15px
         font-size: 16px
@@ -528,6 +525,7 @@
   @media($mobile)
     padding-top: 15px
     padding-bottom: 15px
+    background: #f5f5f5
   &--whiteBg
     background: white
     margin-top: 0
@@ -580,6 +578,10 @@
   border-top: 15px solid #e7e7e7
   padding-top: 30px
   margin-bottom: 60px
+  @media($desktop)
+    margin-right: -15px
+  @media($mobile)
+    margin-right: 0
   .content__card
     margin-left: auto
     margin-right: auto
