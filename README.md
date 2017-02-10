@@ -32,4 +32,4 @@ __Production__
 - CSS Hamburgers
 
 
-gulp build && git add . && git commit -m "addinfo title" && git push origin master && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "more dummy fixes" && git push origin master && git subtree push --prefix dist origin gh-pages
