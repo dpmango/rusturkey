@@ -97,15 +97,13 @@ body, html {
         width: 100%;
     }
 }
-@media(max-width: 768px) {
-    .separatorCards .content__card {
-        padding-top: 13px;
-        padding-bottom: 17px;
-        border-bottom: 1px solid #dedede;
-    }
-    .separatorCards .content__card:nth-child(even) {
-        background: white;
-    }
+.separatorCards .content__card {
+    padding-top: 13px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #dedede;
+}
+.separatorCards .content__card:nth-child(even) {
+    background: white;
 }
 
 /* 2. Elements */
