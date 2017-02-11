@@ -32,4 +32,4 @@ __Production__
 - CSS Hamburgers
 
 
-gulp build && git add . && git commit -m "share source" && git push origin master && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "add hyperlinks" && git push origin master && git subtree push --prefix dist origin gh-pages

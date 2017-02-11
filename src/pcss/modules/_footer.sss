@@ -21,12 +21,19 @@
       padding-right: 25px
       padding-top: 5px
       padding-bottom: 5px
+      transition: all .4s ease
+      &:hover
+        text-decoration: underline
       @media($mobile)
         padding-top: 3px
         padding-bottom: 3px
 
   &__alert
     margin-top: 5px
+    display: block
+    transition: color .4s ease
+    &:hover
+      text-decoration: underline
     @media($mobile)
       background: #000
       border-radius: 20px

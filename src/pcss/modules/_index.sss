@@ -127,12 +127,16 @@
         margin-bottom: 10px
 
     &__title
+      display: block
       font-family: 'ProximaNova-Bold'
       font-size: 24px
       margin-top: 0px
       line-height: 1em
       letter-spacing: -1px
       margin-bottom: 0px
+      transition: color .3s ease
+      &:hover
+        color: $colorRed
       @media($mobile)
         font-size: 22px
         line-height: 20px
@@ -540,7 +544,10 @@
     @media($mobile)
       font-size: 24px
   &__card
-    opacity: 1
+    display: block
+    &:hover
+      .bottomCards__card__title
+        color: $colorRed
     @media($desktop)
       img
         width: 95%
@@ -560,6 +567,7 @@
       padding-top: 20px
       padding-left: 0px
       display: inline-block
+      transition: all .3s ease
       @media($mobile)
         padding-top: 10px
         padding-left: 0

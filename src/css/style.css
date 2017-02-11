@@ -611,6 +611,11 @@ body, html {
     padding-top: 5px;
     padding-right: 25px;
     padding-bottom: 5px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.footer__navi a:hover {
+    text-decoration: underline;
 }
 @media(max-width: 576px) {
     .footer__navi {}
@@ -632,10 +637,16 @@ body, html {
     }
 }
 .footer__alert {
+    display: block;
     margin-top: 5px;
+    -webkit-transition: color .4s ease;
+    transition: color .4s ease;
 }
 .footer__alert .ico {
     margin-right: 10px;
+}
+.footer__alert:hover {
+    text-decoration: underline;
 }
 @media(max-width: 576px) {
     .footer__alert {
@@ -871,12 +882,18 @@ body, html {
     }
 }
 .content__card__title {
+    display: block;
     margin-top: 0px;
     margin-bottom: 0px;
     letter-spacing: -1px;
     font-size: 24px;
     font-family: 'ProximaNova-Bold';
     line-height: 1em;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+}
+.content__card__title:hover {
+    color: #aa2525;
 }
 @media(max-width: 576px) {
     .content__card__title {
@@ -1408,8 +1425,10 @@ body, html {
     }
 }
 .bottomCards__card {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    opacity: 1;
+    display: block;
+}
+.bottomCards__card:hover .bottomCards__card__title {
+    color: #aa2525;
 }
 @media(max-width: 1000px) {
     .bottomCards__card img {
@@ -1437,6 +1456,8 @@ body, html {
     padding-left: 0px;
     font-size: 18px;
     font-family: 'ProximaNova-Bold';
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 @media(max-width: 576px) {
     .bottomCards__card__title {
